@@ -1,7 +1,4 @@
 import java.io.*;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.sql.Array;
 import java.util.*;
 
 public class Main {
@@ -11,8 +8,6 @@ public class Main {
         int caloriesElf = 0;
         int indexElfMax = 0;
         int caloriesElfMax = 0;
-        int caloriesElfSec = 0;
-        int caloriesElfThird = 0;
 
         BufferedReader in = new BufferedReader(new FileReader("src/input.txt"));
         String str;
