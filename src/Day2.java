@@ -19,7 +19,7 @@ choices playerTwo x = rock/y = paper/z = scissor
 De twee lijsten tegenover elkaar zetten. Elke positie[x] tegen elkaar afwegen en een winnaar bepalen.
 Punten van de uitslag berekenen
 Punten bij elkaar optellen
-Degene die aan het eind de meeste punten heeft wint
+Degene die aan het eind de meeste punten heeft wint.
 */
 public class Day2 {
     BufferedReader in = new BufferedReader(new FileReader("day2.txt"));
@@ -172,25 +172,7 @@ public class Day2 {
                     }
                     break;
             }
-//            System.out.println(outcomeRoundP1 + " - " + outcomeRoundP2); //remove the comment to see the result of each round
-
-//            if(playerOne.get(i).equals("A")) {
-//                scoreSelectedP1 = scoreSelectedP1 + 1;
-//            } else if (playerOne.get(i).equals("B")) {
-//                scoreSelectedP1 = scoreSelectedP1 + 2;
-//            } else {
-//                scoreSelectedP1 = scoreSelectedP1 + 3;
-//            }
-//
-//            if(playerTwo.get(i).equals("X")) {
-//                scoreSelectedP2 = scoreSelectedP2 + 1;
-//            } else if (playerTwo.get(i).equals("Y")) {
-//                scoreSelectedP2 = scoreSelectedP2 + 2;
-//            } else {
-//                scoreSelectedP2 = scoreSelectedP2 + 3;
-//            }
         }
-//        totalResultP2 += scoreSelectedP2 + outcomeRoundP2;
 
     }
 }
