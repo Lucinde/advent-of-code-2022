@@ -120,4 +120,77 @@ public class Day2 {
         }
         totalResultP2 += scoreSelectedP2 + outcomeRoundP2;
     }
+
+    public void resetGame() {
+        scoreSelectedP1 = 0;
+        scoreSelectedP2 = 0;
+        outcomeRoundP2 = 0;
+        outcomeRoundP1 = 0;
+        totalResultP2 = 0;
+    }
+
+    public void playGameStrategy() {
+        for (int i = 0; i < results.size(); i++) {
+            switch (playerTwo.get(i)) {
+                case "Z":
+                    switch (playerOne.get(i)) {
+                        case "A":
+                            playerTwo.set(i, "Y");
+                            break;
+                        case "B":
+                            playerTwo.set(i, "Z");
+                            break;
+                        case "C":
+                            playerTwo.set(i, "X");
+                            break;
+                    }
+                    break;
+                case "X":
+                    switch (playerOne.get(i)) {
+                        case "A":
+                            playerTwo.set(i, "Z");
+                            break;
+                        case "B":
+                            playerTwo.set(i, "X");
+                            break;
+                        case "C":
+                            playerTwo.set(i, "Y");
+                            break;
+                    }
+                            break;
+                case "Y":
+                    switch (playerOne.get(i)) {
+                        case "A":
+                            playerTwo.set(i, "X");
+                            break;
+                        case "B":
+                            playerTwo.set(i, "Y");
+                            break;
+                        case "C":
+                            playerTwo.set(i, "Z");
+                            break;
+                    }
+                    break;
+            }
+//            System.out.println(outcomeRoundP1 + " - " + outcomeRoundP2); //remove the comment to see the result of each round
+
+//            if(playerOne.get(i).equals("A")) {
+//                scoreSelectedP1 = scoreSelectedP1 + 1;
+//            } else if (playerOne.get(i).equals("B")) {
+//                scoreSelectedP1 = scoreSelectedP1 + 2;
+//            } else {
+//                scoreSelectedP1 = scoreSelectedP1 + 3;
+//            }
+//
+//            if(playerTwo.get(i).equals("X")) {
+//                scoreSelectedP2 = scoreSelectedP2 + 1;
+//            } else if (playerTwo.get(i).equals("Y")) {
+//                scoreSelectedP2 = scoreSelectedP2 + 2;
+//            } else {
+//                scoreSelectedP2 = scoreSelectedP2 + 3;
+//            }
+        }
+//        totalResultP2 += scoreSelectedP2 + outcomeRoundP2;
+
+    }
 }

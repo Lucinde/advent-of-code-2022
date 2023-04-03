@@ -16,6 +16,10 @@ public class Main {
         rps.inputPlayers(rps.results);
         rps.playGame();
         System.out.println("My total score would be " + rps.totalResultP2);
+        rps.resetGame();
+        rps.playGameStrategy();
+        rps.playGame();
+        System.out.println("With the right strategy my total score would be " + rps.totalResultP2);
         System.out.println("---------------");
 
     }
