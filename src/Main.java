@@ -10,5 +10,13 @@ public class Main {
         elf1.countTopThree();
         System.out.println("---------------");
 
+        System.out.println("-----DAY 2-----");
+        Day2 rps = new Day2();
+        rps.processInput();
+        rps.inputPlayers(rps.results);
+        rps.playGame();
+        System.out.println("My total score would be " + rps.totalResultP2);
+        System.out.println("---------------");
+
     }
 }
