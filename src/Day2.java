@@ -38,6 +38,7 @@ public class Day2 {
     public Day2() throws FileNotFoundException {
     }
 
+    /* read the input from the file */
     public void processInput() throws IOException {
         String line = in.readLine();
         while (line != null) {
@@ -45,6 +46,8 @@ public class Day2 {
             line = in.readLine();
         }
     }
+
+    /* add the input to the players strings */
     public void inputPlayers(List<String> results) {
         for (String line : results) {
             String[] columns = line.split("\\s+"); // \\s+ is regex that splits string by 1 or more white-characters
@@ -54,6 +57,7 @@ public class Day2 {
         }
     }
 
+    /* play the game with the first plan */
     public void playGame() {
         for (int i = 0; i < results.size(); i++) {
             if(playerOne.get(i).equals("A")) {
@@ -121,6 +125,7 @@ public class Day2 {
         totalResultP2 += scoreSelectedP2 + outcomeRoundP2;
     }
 
+    /* reset the game after playing */
     public void resetGame() {
         scoreSelectedP1 = 0;
         scoreSelectedP2 = 0;
@@ -129,6 +134,7 @@ public class Day2 {
         totalResultP2 = 0;
     }
 
+    /* give playerTwo the right input to play the game with the real strategy */
     public void playGameStrategy() {
         for (int i = 0; i < results.size(); i++) {
             switch (playerTwo.get(i)) {
