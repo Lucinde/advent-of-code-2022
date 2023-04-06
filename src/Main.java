@@ -22,5 +22,13 @@ public class Main {
         System.out.println("With the right strategy my total score would be " + rps.totalResultP2);
         System.out.println("---------------");
 
+        System.out.println("-----DAY 3-----");
+        Day3 prioItems = new Day3();
+        prioItems.countPriorities();
+        System.out.println("The sum of priorities is " + prioItems.sumPriorities);
+        prioItems.addBadges();
+        System.out.println("The sum of the badges is " + prioItems.sumPrioritiesGroup);
+        System.out.println("---------------");
+
     }
 }
