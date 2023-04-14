@@ -30,5 +30,9 @@ public class Main {
         System.out.println("The sum of the badges is " + prioItems.sumPrioritiesGroup);
         System.out.println("---------------");
 
+        System.out.println("-----DAY 4-----");
+        Day4 range = new Day4();
+        range.getRange();
+        System.out.println("---------------");
     }
 }
