@@ -1,17 +1,16 @@
 import java.io.*;
-import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
 
         System.out.println("-----DAY 1-----");
-        Day1 elf1 = new Day1();
+        Day01 elf1 = new Day01();
         elf1.countCalories();
         elf1.countTopThree();
         System.out.println("---------------");
 
         System.out.println("-----DAY 2-----");
-        Day2 rps = new Day2();
+        Day02 rps = new Day02();
         rps.processInput();
         rps.inputPlayers(rps.results);
         rps.playGame();
@@ -23,7 +22,7 @@ public class Main {
         System.out.println("---------------");
 
         System.out.println("-----DAY 3-----");
-        Day3 prioItems = new Day3();
+        Day03 prioItems = new Day03();
         prioItems.countPriorities();
         System.out.println("The sum of priorities is " + prioItems.sumPriorities);
         prioItems.addBadges();
@@ -31,7 +30,7 @@ public class Main {
         System.out.println("---------------");
 
         System.out.println("-----DAY 4-----");
-        Day4 range = new Day4();
+        Day04 range = new Day04();
         range.getRange();
         System.out.println("---------------");
     }

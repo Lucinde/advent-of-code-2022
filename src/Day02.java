@@ -21,8 +21,8 @@ Punten van de uitslag berekenen
 Punten bij elkaar optellen
 Degene die aan het eind de meeste punten heeft wint.
 */
-public class Day2 {
-    BufferedReader in = new BufferedReader(new FileReader("day2.txt"));
+public class Day02 {
+    BufferedReader in = new BufferedReader(new FileReader("src/input/day02.txt"));
     List<String> results = new ArrayList<>();
 
     List<String> playerOne = new ArrayList<>();
@@ -35,7 +35,7 @@ public class Day2 {
 
 
     /*constructor*/
-    public Day2() throws FileNotFoundException {
+    public Day02() throws FileNotFoundException {
     }
 
     /* read the input from the file */

@@ -4,11 +4,11 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Day4 {
-    BufferedReader in = new BufferedReader(new FileReader("day4.txt"));
+public class Day04 {
+    BufferedReader in = new BufferedReader(new FileReader("src/input/day04.txt"));
     ArrayList<String> results = new ArrayList<>();
 
-    public Day4() throws FileNotFoundException {
+    public Day04() throws FileNotFoundException {
     }
 
     public void getRange() throws IOException {

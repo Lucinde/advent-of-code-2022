@@ -18,11 +18,10 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class Day3 {
-    BufferedReader in = new BufferedReader(new FileReader("day3.txt"));
+public class Day03 {
+    BufferedReader in = new BufferedReader(new FileReader("src/input/day03.txt"));
     ArrayList<String> results = new ArrayList<>();
     ArrayList<String> compartmentOne = new ArrayList<>();
     ArrayList<String> compartmentTwo = new ArrayList<>();
@@ -31,7 +30,7 @@ public class Day3 {
     int sumPrioritiesGroup;
 
     /*constructor*/
-    public Day3() throws FileNotFoundException {
+    public Day03() throws FileNotFoundException {
     }
 
     /*methods*/

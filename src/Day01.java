@@ -6,12 +6,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Day1 {
+public class Day01 {
     int indexElf = 1;
     int caloriesElf = 0;
     int indexElfMax = 0;
     int caloriesElfMax = 0;
-    BufferedReader in = new BufferedReader(new FileReader("src/input.txt"));
+    BufferedReader in = new BufferedReader(new FileReader("src/input/day01.txt"));
     String str;
 
     //List<String> list = new ArrayList<>();
@@ -38,7 +38,7 @@ public class Day1 {
 
     /* part 2 */
 
-    BufferedReader in2 = new BufferedReader(new FileReader("src/input.txt"));
+    BufferedReader in2 = new BufferedReader(new FileReader("src/input/day01.txt"));
 
     //int indexElf2 = 1;
     int caloriesElf2 = 0;
@@ -72,6 +72,6 @@ public class Day1 {
         System.out.println("The amount of calories of the top three elf's together is: " + total);
     }
 
-    public Day1() throws FileNotFoundException {
+    public Day01() throws FileNotFoundException {
     }
 }
