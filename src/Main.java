@@ -33,5 +33,10 @@ public class Main {
         Day04 range = new Day04();
         range.getRange();
         System.out.println("---------------");
+
+        System.out.println("-----DAY 5-----");
+        Day05 moveCrates = new Day05();
+        moveCrates.getMoves();
+        System.out.println("---------------");
     }
 }
