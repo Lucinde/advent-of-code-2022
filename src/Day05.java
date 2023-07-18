@@ -5,9 +5,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 
 public class Day05 {
-//    BufferedReader inCrates = new BufferedReader(new FileReader("src/input/day05-crates.txt"));
     HashMap<Integer, ArrayList<String>> crateItems = new HashMap<>();
     BufferedReader inMoves = new BufferedReader(new FileReader("src/input/day05-moves.txt"));
 
@@ -30,6 +30,10 @@ public class Day05 {
         cratePrint();
         System.out.println("------------");
         System.out.println("--MOVE ALL--");
+        crateItems = addCrateItems();
+        moveMultipleCrateItems(crateItems, movesNumbers);
+        System.out.println();
+        cratePrint();
 
 
     }
@@ -126,6 +130,27 @@ public class Day05 {
             crateItems.put(to, toValues);
         }
 
+    }
+
+    public void moveMultipleCrateItems(HashMap<Integer, ArrayList<String>> crateItems, ArrayList<int[]> movesNumbers) {
+        for (int[] move: movesNumbers) {
+            int moves = move[0];
+            int from = move[1];
+            int to = move[2];
+
+            //get the current lists
+            ArrayList<String> fromValues = crateItems.get(from);
+            ArrayList<String> toValues = crateItems.get(to);
+
+            //make the move
+            List<String> movedItems = fromValues.subList(fromValues.size() - moves, fromValues.size());
+            toValues.addAll(movedItems);
+            movedItems.clear();
+
+            //save the items
+            crateItems.put(from, fromValues);
+            crateItems.put(to, toValues);
+        }
     }
 
 }
